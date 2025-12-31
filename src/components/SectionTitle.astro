@@ -1,0 +1,100 @@
+---
+import MyBadge from "./BadgeC";
+import MyButton from "./ButtonC.jsx"
+import { BadgeCheckIcon, Check } from "lucide-react";
+---
+
+<section class="grid grid-cols-2 bg-linear-to-r from-[#00A1FE] to-[#324F92] h-screen content-center">
+    <div class="px-20">
+
+        <div class="text-[#BAE6FD] mb-2">
+            Formación 100% online · Desbloqueo profesional
+        </div>
+
+        <div class="mb-6 text-white font-extrabold text-5xl leading-relaxed">
+            Aprende a
+            <span class="bg-linear-to-r from-[#e0f2fe] to-[#bae6fd] bg-clip-text text-transparent">desbloquear y reparar software</span>
+            de celulares desde cero hasta nivel pro.
+        </div>
+
+        <div class="text-white mb-6">
+            Domina FRP, MDM, cuentas, flasheos y métodos remotos para convertir el desbloqueo de celulares en una fuente real de ingresos, sin depender de nadie más.
+        </div>
+
+        <div class="leading-8 mb-6">
+            <MyBadge className=""> <BadgeCheckIcon/> Actualizado 2026</MyBadge>
+            <MyBadge className=""> <BadgeCheckIcon/> Acceso de por vida</MyBadge>
+            <MyBadge className="">+100 alumnos en LATAM</MyBadge>
+            <MyBadge className="">Soporte por WhatsApp</MyBadge>
+        </div>
+
+        <div class="flex gap-4 mb-6">
+            <MyButton className="">Quiero el curso →</MyButton>
+
+            <button class="text-white rounded-full border-1 border-white p-3 font-medium text-sm hover:text-[#026DB8] hover:bg-white ease-in-out transition">
+                Ver temario completo
+            </button>
+        </div>
+
+        <div class="text-white">
+            <span class="text-white font-bold">Garantía 7 días:</span>
+            si el curso no es para ti, te devolvemos el dinero.</div>
+    </div>
+
+    <div class="content-center justify-items-center">
+        <div class="w-[60%] h-[80%] rounded-[24px] border-1 p-6 bg-[linear-gradient(to_bottom_left,rgba(59,130,246,0.25),rgba(0,23,51,0.98))]">
+
+            <h3 class="text-white mb-4">
+                Inscripción abierta por tiempo limitado
+            </h3>
+
+            <p class="text-white font-thin text-sm mb-4">
+                Cuando el contador llegue a cero, se cierra el acceso o el precio sube.
+            </p>
+
+            <div class=" flex text-white mb-4 font-extrabold text-3xl">
+                $1500 MXN
+                <MyBadge className="bg-[#11203A] border-1 ml-4">
+                    Pago único · acceso de por vida
+                </MyBadge>
+            </div>
+
+            <div class="text-white">Aqui va el timer</div>
+
+            <MyButton className="w-full mb-4">
+                Inscribirme ahora
+            </MyButton>
+
+            <h4 class="text-white text-sm font-semibold mb-4">
+                ESTE CURSO INCLUYE
+            </h4>
+
+            <ul class="text-white text-xs leading-7 mb-4">
+                <li class="flex items-center">
+                    <Check size={15} color="#37BDF8"/>
+                    Acceso completo a todos los módulos
+                </li>
+                <li class="flex items-center">
+                    <Check size={18} color="#37BDF8"/>
+                    Actualizaciones sin costo adicional
+                </li>
+                <li class="flex items-center">
+                    <Check size={18} color="#37BDF8"/>
+                    Grupo privado para dudas
+                </li>
+                <li class="flex items-center">
+                    <Check size={18} color="#37BDF8"/>
+                    Ejemplos reales de casos de clientes
+                </li>
+                <li class="flex items-center">
+                    <Check size={18} color="#37BDF8"/>
+                    Licencia Tstool 3 meses gratis Acceso Full
+                </li>
+            </ul>
+
+            <p class="text-white text-xs">
+                🔒 Compra segura: Mercado pago, paypal y binance, con cifrado y protección al comprador.
+            </p>
+        </div>
+    </div>
+</section>
