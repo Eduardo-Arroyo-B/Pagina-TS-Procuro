@@ -5,8 +5,8 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
-import { Button } from "@/components/ui/button";
+} from "@/components/ui/navigation-menu.js";
+import { Button } from "@/components/ui/button.js";
 
 export default function NavMenu() {
     return (

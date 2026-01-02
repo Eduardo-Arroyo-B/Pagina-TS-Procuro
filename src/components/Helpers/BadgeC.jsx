@@ -1,5 +1,5 @@
-import { Badge } from "@/components/ui/badge"
-import { cn } from "@/lib/utils"
+import { Badge } from "@/components/ui/badge.js"
+import { cn } from "@/lib/utils.js"
 
 export default function MyBadge({ className, ...props }) {
     return (

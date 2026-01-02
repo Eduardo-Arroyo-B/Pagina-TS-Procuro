@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button.js"
+import { cn } from "@/lib/utils.js"
 
 
 export default function MyButton({ className, ...props }) {

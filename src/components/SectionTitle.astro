@@ -1,100 +1,105 @@
 ---
-import MyBadge from "./BadgeC";
-import MyButton from "./ButtonC.jsx"
+import MyBadge from "./Helpers/BadgeC.jsx";
+import MyButton from "./Helpers/ButtonC.jsx"
 import { BadgeCheckIcon, Check } from "lucide-react";
 ---
 
-<section class="grid grid-cols-2 bg-linear-to-r from-[#00A1FE] to-[#324F92] h-screen content-center">
-    <div class="px-20">
+<section class="min-h-screen bg-linear-to-r from-[#00A1FE] to-[#324F92] grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] items-center px-6 sm:px-10 lg:px-20 xl:px-28 2xl:px-36 py-16 lg:py-0">
 
-        <div class="text-[#BAE6FD] mb-2">
+    {/* Parte Izquierda */}
+    <div class="max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto lg:mx-0">
+
+        <div class="text-[#BAE6FD] mb-3 text-sm">
             Formación 100% online · Desbloqueo profesional
         </div>
 
-        <div class="mb-6 text-white font-extrabold text-5xl leading-relaxed">
-            Aprende a
-            <span class="bg-linear-to-r from-[#e0f2fe] to-[#bae6fd] bg-clip-text text-transparent">desbloquear y reparar software</span>
-            de celulares desde cero hasta nivel pro.
-        </div>
+        <h1 class="text-white font-extrabold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl leading-tight mb-6">
+                Aprende a{" "}
+            <span class="bg-linear-to-r from-[#e0f2fe] to-[#bae6fd] bg-clip-text text-transparent">
+                desbloquear y reparar software
+            </span>{" "}
+                de celulares desde cero hasta nivel pro.
+        </h1>
 
-        <div class="text-white mb-6">
-            Domina FRP, MDM, cuentas, flasheos y métodos remotos para convertir el desbloqueo de celulares en una fuente real de ingresos, sin depender de nadie más.
-        </div>
+        <p class="text-white text-sm sm:text-base xl:text-lg mb-6">
+            Domina FRP, MDM, cuentas, flasheos y métodos remotos para convertir el desbloqueo
+            de celulares en una fuente real de ingresos, sin depender de nadie más.
+        </p>
 
-        <div class="leading-8 mb-6">
-            <MyBadge className=""> <BadgeCheckIcon/> Actualizado 2026</MyBadge>
-            <MyBadge className=""> <BadgeCheckIcon/> Acceso de por vida</MyBadge>
+        <div class="flex flex-wrap gap-2 mb-6">
+            <MyBadge className=""><BadgeCheckIcon size={16}/> Actualizado 2026</MyBadge>
+            <MyBadge className=""><BadgeCheckIcon size={16}/> Acceso de por vida</MyBadge>
             <MyBadge className="">+100 alumnos en LATAM</MyBadge>
             <MyBadge className="">Soporte por WhatsApp</MyBadge>
         </div>
 
-        <div class="flex gap-4 mb-6">
+        <div class="flex flex-col sm:flex-row gap-4 mb-6">
             <MyButton className="">Quiero el curso →</MyButton>
 
-            <button class="text-white rounded-full border-1 border-white p-3 font-medium text-sm hover:text-[#026DB8] hover:bg-white ease-in-out transition">
+            <button class="text-white rounded-full border border-white px-6 py-3 font-medium text-sm hover:text-[#026DB8] hover:bg-white transition">
                 Ver temario completo
             </button>
         </div>
 
-        <div class="text-white">
-            <span class="text-white font-bold">Garantía 7 días:</span>
-            si el curso no es para ti, te devolvemos el dinero.</div>
+        <p class="text-white text-sm">
+            <span class="font-bold">Garantía 7 días:</span>
+            si el curso no es para ti, te devolvemos el dinero.
+        </p>
     </div>
 
-    <div class="content-center justify-items-center">
-        <div class="w-[60%] h-[80%] rounded-[24px] border-1 p-6 bg-[linear-gradient(to_bottom_left,rgba(59,130,246,0.25),rgba(0,23,51,0.98))]">
+    {/* Parte Derecha */}
+    <div class="flex justify-center mt-12 lg:mt-0">
+        <div class="w-full max-w-md xl:max-w-lg 2xl:max-w-xl rounded-[24px] xl:rounded-[28px] border border-white/20 p-6 sm:p-8 xl:p-10 bg-[linear-gradient(to_bottom_left,rgba(59,130,246,0.25),rgba(0,23,51,0.98))]">
 
-            <h3 class="text-white mb-4">
+            <h3 class="text-white font-semibold mb-3">
                 Inscripción abierta por tiempo limitado
             </h3>
 
-            <p class="text-white font-thin text-sm mb-4">
+            <p class="text-white text-sm mb-4 opacity-90">
                 Cuando el contador llegue a cero, se cierra el acceso o el precio sube.
             </p>
 
-            <div class=" flex text-white mb-4 font-extrabold text-3xl">
+            <div class="flex flex-wrap items-center gap-3 text-white font-extrabold text-3xl xl:text-4xl mb-4">
                 $1500 MXN
-                <MyBadge className="bg-[#11203A] border-1 ml-4">
+                <MyBadge className="bg-[#11203A] border">
                     Pago único · acceso de por vida
                 </MyBadge>
             </div>
 
-            <div class="text-white">Aqui va el timer</div>
+            <div class="text-white mb-4">
+                Aquí va el timer
+            </div>
 
-            <MyButton className="w-full mb-4">
+            <MyButton className="w-full mb-6">
                 Inscribirme ahora
             </MyButton>
 
-            <h4 class="text-white text-sm font-semibold mb-4">
+            <h4 class="text-white text-sm font-semibold mb-3">
                 ESTE CURSO INCLUYE
             </h4>
 
-            <ul class="text-white text-xs leading-7 mb-4">
-                <li class="flex items-center">
-                    <Check size={15} color="#37BDF8"/>
-                    Acceso completo a todos los módulos
+            <ul class="text-white text-xs xl:text-sm leading-7 xl:leading-8 mb-4 space-y-1">
+                <li class="flex items-center gap-2">
+                    <Check size={16} color="#37BDF8"/> Acceso completo a todos los módulos
                 </li>
-                <li class="flex items-center">
-                    <Check size={18} color="#37BDF8"/>
-                    Actualizaciones sin costo adicional
+                <li class="flex items-center gap-2">
+                    <Check size={16} color="#37BDF8"/> Actualizaciones sin costo adicional
                 </li>
-                <li class="flex items-center">
-                    <Check size={18} color="#37BDF8"/>
-                    Grupo privado para dudas
+                <li class="flex items-center gap-2">
+                    <Check size={16} color="#37BDF8"/> Grupo privado para dudas
                 </li>
-                <li class="flex items-center">
-                    <Check size={18} color="#37BDF8"/>
-                    Ejemplos reales de casos de clientes
+                <li class="flex items-center gap-2">
+                    <Check size={16} color="#37BDF8"/> Casos reales de clientes
                 </li>
-                <li class="flex items-center">
-                    <Check size={18} color="#37BDF8"/>
-                    Licencia Tstool 3 meses gratis Acceso Full
+                <li class="flex items-center gap-2">
+                    <Check size={16} color="#37BDF8"/> Licencia Tstool 3 meses gratis
                 </li>
             </ul>
 
-            <p class="text-white text-xs">
-                🔒 Compra segura: Mercado pago, paypal y binance, con cifrado y protección al comprador.
+            <p class="text-white text-xs opacity-80">
+                🔒 Compra segura: Mercado Pago, PayPal y Binance.
             </p>
         </div>
     </div>
+
 </section>

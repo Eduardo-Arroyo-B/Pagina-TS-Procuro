@@ -3,7 +3,9 @@ import '../styles/global.css';
 // Component Imports
 import Header from "../components/Header.astro"
 import SectionTitle from "../components/SectionTitle.astro"
-
+import SectionBeneficios from "../components/SectionBeneficios.astro"
+import SectionParaQuien from "../components/SectionParaQuien.astro"
+import SectionTemario from "../components/SectionTemario.astro"
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
 ---
@@ -17,8 +19,14 @@ import SectionTitle from "../components/SectionTitle.astro"
 		<title>Academia yo desbloqueo y reparo</title>
 	</head>
 
-	<body>
-		<Header/>
+	<Header/>
+
+	<body class="bg-[#F3F4F6]">
+
 		<SectionTitle/>
+		<SectionBeneficios/>
+		<SectionParaQuien/>
+		<SectionTemario/>
+
 	</body>
 </html>
