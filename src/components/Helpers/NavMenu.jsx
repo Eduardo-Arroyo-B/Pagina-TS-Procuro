@@ -20,7 +20,7 @@ export default function NavMenu() {
                         <NavigationMenuList className="gap-6">
                             <NavigationMenuItem className="hover:cursor-pointer">
 
-                                <NavigationMenuLink className="text-white">
+                                <NavigationMenuLink className="text-white" href="#Inicio">
                                     Inicio
                                 </NavigationMenuLink>
 
@@ -28,7 +28,7 @@ export default function NavMenu() {
 
                             <NavigationMenuItem className="hover:cursor-pointer">
 
-                                <NavigationMenuLink className="text-white">
+                                <NavigationMenuLink className="text-white" href="#Beneficios">
                                     Beneficios
                                 </NavigationMenuLink>
 
@@ -36,7 +36,7 @@ export default function NavMenu() {
 
                             <NavigationMenuItem className="hover:cursor-pointer">
 
-                                <NavigationMenuLink className="text-white">
+                                <NavigationMenuLink className="text-white" href="#para-quien">
                                     ¿Para quien?
                                 </NavigationMenuLink>
 
@@ -44,7 +44,7 @@ export default function NavMenu() {
 
                             <NavigationMenuItem className="hover:cursor-pointer">
 
-                                <NavigationMenuLink className="text-white">
+                                <NavigationMenuLink className="text-white" href="#temario">
                                     Temario
                                 </NavigationMenuLink>
 
@@ -52,7 +52,7 @@ export default function NavMenu() {
 
                             <NavigationMenuItem className="hover:cursor-pointer">
 
-                                <NavigationMenuLink className="text-white">
+                                <NavigationMenuLink className="text-white" href="#testimonios">
                                     Testimonios
                                 </NavigationMenuLink>
 
@@ -60,7 +60,7 @@ export default function NavMenu() {
 
                             <NavigationMenuItem className="hover:cursor-pointer">
 
-                                <NavigationMenuLink className="text-white">
+                                <NavigationMenuLink className="text-white" href="">
                                     FAQ
                                 </NavigationMenuLink>
 

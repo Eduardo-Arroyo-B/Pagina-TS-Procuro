@@ -2,6 +2,7 @@
 import MyBadge from "./Helpers/BadgeC.jsx";
 import MyButton from "./Helpers/ButtonC.jsx"
 import { BadgeCheckIcon, Check } from "lucide-react";
+import Counter from "./Helpers/Counter24.jsx"
 ---
 
 <section class="min-h-screen bg-linear-to-r from-[#00A1FE] to-[#324F92] grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] items-center px-6 sm:px-10 lg:px-20 xl:px-28 2xl:px-36 py-16 lg:py-0">
@@ -55,11 +56,9 @@ import { BadgeCheckIcon, Check } from "lucide-react";
                 Inscripción abierta por tiempo limitado
             </h3>
 
-            <!--
             <p class="text-white text-sm mb-4 opacity-90">
                 Cuando el contador llegue a cero, se cierra el acceso o el precio sube.
             </p>
-            -->
 
             <div class="flex flex-wrap items-center gap-3 text-white font-extrabold text-3xl xl:text-4xl mb-4">
                 $1500 MXN
@@ -68,11 +67,9 @@ import { BadgeCheckIcon, Check } from "lucide-react";
                 </MyBadge>
             </div>
 
-            <!--
-            <div class="text-white mb-4">
-                Aquí va el timer
+            <div class="text-white mb-4 flex content-center justify-center">
+                <Counter client:load/>
             </div>
-            -->
 
             <MyButton className="w-full mb-6">
                 Inscribirme ahora
